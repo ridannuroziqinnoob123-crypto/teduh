@@ -1,0 +1,16 @@
+{
+  "name": "Teduh – Ruang tenang kesehatan mental mahasiswa",
+  "short_name": "Teduh",
+  "description": "Cek kondisi, catat suasana hati, latihan napas, dan akses bantuan. Data tersimpan hanya di perangkatmu.",
+  "lang": "id",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#041a17",
+  "theme_color": "#041a17",
+  "icons": [
+    { "src": "img/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Teduh – Ruang tenang kesehatan mental mahasiswa</title>
+<meta name="description" content="Cek kondisi, catat suasana hati, latihan napas, dan akses bantuan profesional. Data tersimpan hanya di perangkatmu.">
+<meta name="theme-color" content="#041a17">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="img/icon-192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Teduh">
+<!-- Pratinjau saat link dibagikan. GANTI alamat di bawah dengan domain asli setelah situs di-online-kan -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Teduh">
+<meta property="og:locale" content="id_ID">
+<meta property="og:title" content="Teduh – Ruang tenang kesehatan mental mahasiswa">
+<meta property="og:description" content="Cek kondisi, catat suasana hati, latihan napas, dan akses bantuan. Gratis, tanpa akun, data di perangkatmu.">
+<meta property="og:image" content="https://GANTI-DENGAN-DOMAIN-KAMU/img/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Teduh – Ruang tenang kesehatan mental mahasiswa">
+<meta name="twitter:description" content="Cek kondisi, catat suasana hati, latihan napas, dan akses bantuan. Gratis, tanpa akun.">
+<meta name="twitter:image" content="https://GANTI-DENGAN-DOMAIN-KAMU/img/og-image.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3CradialGradient id='g' cx='.35' cy='.3' r='.8'%3E%3Cstop offset='0' stop-color='%23d4fff0'/%3E%3Cstop offset='.5' stop-color='%233fb594'/%3E%3Cstop offset='1' stop-color='%230b4a3f'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='32' cy='32' r='28' fill='url(%23g)'/%3E%3C/svg%3E">
+<script>document.documentElement.className='js'</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=8">
+</head>
+<body>
+<a class="skip" href="#main">Lewati ke konten</a>
+
+<!-- Latar 3D melayang -->
+<div class="bg" aria-hidden="true"><i class="s s1"></i><i class="s s2"></i><i class="s s3"></i><i class="s s4"></i></div>
+
+<header class="top">
+  <a class="brand" href="#beranda"><svg viewBox="0 0 32 32" aria-hidden="true"><defs><radialGradient id="lg" cx=".35" cy=".3" r=".85"><stop offset="0" stop-color="#e6fff6"/><stop offset=".45" stop-color="#5fd3b0"/><stop offset="1" stop-color="#0b4a3f"/></radialGradient></defs><circle cx="16" cy="16" r="14" fill="url(#lg)"/><ellipse cx="16" cy="16" rx="15" ry="5" fill="none" stroke="#ffc79a" stroke-width="1.6" transform="rotate(-24 16 16)"/></svg>Teduh</a>
+  <nav aria-label="Menu utama">
+    <a href="#beranda">Beranda</a>
+    <a href="#cek">Cek kondisi</a>
+    <a href="#mood">Mood &amp; jurnal</a>
+    <a href="#latihan">Latihan</a>
+    <a href="#bantuan">Bantuan</a>
+    <a href="#tentang">Tentang</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<section id="beranda" class="view">
+  <div class="hero">
+    <div class="hero-text">
+      <p class="badge rv"><b>Gratis</b><span>Tanpa akun, data di perangkatmu</span></p>
+      <h1 class="rv" style="--d:.08s">Tarik napas dulu. Kita mulai <em>pelan-pelan.</em></h1>
+      <p class="lead rv" style="--d:.16s">Teduh membantu mahasiswa mengenali kondisinya, mencatat suasana hati, dan menemukan bantuan saat dibutuhkan.</p>
+      <p class="row rv" style="--d:.24s"><a class="btn" href="#cek">Cek kondisiku</a><a class="btn ghost" href="#mood">Catat mood hari ini</a></p>
+      <p class="note rv" style="--d:.3s">Teduh bukan alat diagnosis dan tidak menggantikan psikolog atau psikiater.</p>
+    </div>
+
+    <div class="stage rv" style="--d:.2s">
+      <canvas id="hero3d" role="img" aria-label="Bola partikel 3D yang berputar dan berdenyut pelan seperti napas"></canvas>
+      <span class="chip c1">Pikiran sehat</span>
+      <span class="chip c2">Kesehatan mental</span>
+      <span class="chip c3">Langkah pertamamu</span>
+    </div>
+  </div>
+
+
+  <div class="band rv">
+    <h2>Kenapa ini penting</h2>
+    <p>Tekanan skripsi, tugas, biaya, dan jauh dari keluarga sering dipendam sendiri. Banyak mahasiswa baru mencari bantuan setelah kondisinya berat.</p>
+    <p>Survei nasional I-NAMHS 2022 menemukan bahwa 1 dari 3 remaja Indonesia usia 10–17 tahun (34,9%) mengalami satu masalah kesehatan mental dalam 12 bulan terakhir, dan 1 dari 20 (5,5%) mengalami gangguan mental.</p>
+    <p class="note">Sumber: I-NAMHS 2022 (Indonesia National Adolescent Mental Health Survey), dipublikasikan oleh <a href="https://ugm.ac.id/id/berita/23086-hasil-survei-i-namhs-satu-dari-tiga-remaja-indonesia-memiliki-masalah-kesehatan-mental/" target="_blank" rel="noopener">Universitas Gadjah Mada</a>.</p>
+  </div>
+
+  <div class="trio">
+    <article class="t3 rv" data-tilt><span class="ic pop"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3 8-8M20 12v6a2 2 0 01-2 2H6a2 2 0 01-2-2V6a2 2 0 012-2h9"/></svg></span><h3 class="pop">Cek kondisi</h3><p class="pop">Sembilan pertanyaan singkat dengan instrumen PHQ-9 untuk melihat gambaran dua minggu terakhir.</p></article>
+    <article class="t3 rv" style="--d:.1s" data-tilt><span class="ic pop"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V9M10 19V5M16 19v-8M22 19H2"/></svg></span><h3 class="pop">Mood &amp; jurnal</h3><p class="pop">Catat mood harian dan pemicunya. Teduh mencari pola dan memberi saran yang cocok.</p></article>
+    <article class="t3 rv" style="--d:.2s" data-tilt><span class="ic pop"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21C7 17 3 13.5 3 9.5A4.5 4.5 0 0112 8a4.5 4.5 0 019 1.5C21 13.5 17 17 12 21z"/></svg></span><h3 class="pop">Latihan &amp; bantuan</h3><p class="pop">Latihan napas berpemandu, teknik grounding, dan daftar layanan bantuan yang bisa dihubungi.</p></article>
+  </div>
+</section>
+
+<section id="cek" class="view">
+  <div class="phead">
+    <div>
+      <h1 class="rv">Cek kondisi</h1>
+      <p class="lead rv" style="--d:.08s">Selama dua minggu terakhir, seberapa sering kamu terganggu oleh hal-hal berikut? Jawab sejujurnya. Tidak ada jawaban benar atau salah.</p>
+    </div>
+    <div class="cube-wrap" aria-hidden="true"><div class="cube"><i class="f1"></i><i class="f2"></i><i class="f3"></i><i class="f4"></i><i class="f5"></i><i class="f6"></i></div></div>
+  </div>
+  <div class="progress" id="prog" role="progressbar" aria-label="Progres pengisian" aria-valuemin="0" aria-valuemax="9" aria-valuenow="0">
+    <div class="meta"><span>Progres</span><span id="ptxt">0 dari 9 terjawab</span></div>
+    <div class="track"><div id="pbar"></div></div>
+  </div>
+  <form id="qform"></form>
+  <div id="result" class="result" tabindex="-1" hidden></div>
+  <div id="histbox" class="hist" hidden>
+    <h2>Riwayat hasil cek</h2>
+    <p class="note">Disimpan hanya di perangkatmu. Skor lebih rendah berarti gejala yang kamu rasakan lebih sedikit.</p>
+    <div id="hist"></div>
+    <p><button class="btn ghost" id="clearhist" type="button">Hapus riwayat cek</button></p>
+  </div>
+</section>
+
+<section id="mood" class="view">
+  <h1 class="rv">Mood &amp; jurnal</h1>
+  <div class="two">
+    <div class="rv">
+      <h2>Bagaimana perasaanmu hari ini?</h2>
+      <div id="moods" class="moods" role="radiogroup" aria-label="Pilih mood"></div>
+      <h3>Apa yang memengaruhi?</h3>
+      <div id="trig" class="chips"></div>
+      <label for="note">Catatan singkat (opsional)</label>
+      <textarea id="note" rows="3" maxlength="300"></textarea>
+      <p><button class="btn" id="save" type="button">Simpan hari ini</button> <span id="saved" role="status"></span></p>
+      <h3>Bawa ke konselor</h3>
+      <p class="note">Ringkasan mood 14 hari terakhir, pemicu, dan catatanmu dalam satu lembar.</p>
+      <p class="row tight"><button class="btn ghost" id="dl" type="button">Unduh ringkasan</button><button class="btn ghost" id="pr" type="button">Cetak / simpan PDF</button></p>
+    </div>
+    <div class="rv" style="--d:.12s">
+      <h2>7 hari terakhir</h2>
+      <div class="chart-scene"><div id="chart" class="chart" role="img" aria-label="Grafik mood 7 hari terakhir"></div></div>
+      <div id="insight" class="insight" aria-live="polite"></div>
+    </div>
+  </div>
+</section>
+
+<section id="latihan" class="view">
+  <h1 class="rv">Latihan</h1>
+  <div class="two">
+    <div class="rv">
+      <h2>Napas berpemandu</h2>
+      <p>Ikuti bola: tarik napas 4 hitungan, tahan 4, hembuskan 6. Ulangi selama 2–3 menit.</p>
+      <div id="b2" class="breath"></div>
+    </div>
+    <div class="rv" style="--d:.12s">
+      <h2>Grounding 5-4-3-2-1</h2>
+      <p>Berguna saat pikiran terasa berputar atau panik. Lakukan perlahan.</p>
+      <ol class="steps">
+        <li>Sebutkan <b>5</b> hal yang kamu lihat.</li>
+        <li>Sentuh <b>4</b> benda di sekitarmu.</li>
+        <li>Dengarkan <b>3</b> suara.</li>
+        <li>Cari <b>2</b> aroma.</li>
+        <li>Rasakan <b>1</b> rasa di mulutmu.</li>
+      </ol>
+      <h2>Kebiasaan kecil</h2>
+      <p>Tidur 7–9 jam, jalan kaki 10 menit, dan pecah tugas besar menjadi langkah 25 menit sering membantu menurunkan beban.</p>
+    </div>
+  </div>
+</section>
+
+<section id="bantuan" class="view">
+  <div class="phead">
+    <div>
+      <h1 class="rv">Bantuan</h1>
+      <p class="lead rv" style="--d:.08s">Kamu tidak harus menghadapi ini sendirian. Menghubungi bantuan adalah langkah yang tepat, bukan tanda lemah.</p>
+    </div>
+    <div class="cube-wrap warm" aria-hidden="true"><div class="cube"><i class="f1"></i><i class="f2"></i><i class="f3"></i><i class="f4"></i><i class="f5"></i><i class="f6"></i></div></div>
+  </div>
+  <div class="emergency rv">
+    <div class="badge-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M12 7v6M9 10h6M10 21v-4h4v4"/></svg></div>
+    <div>
+      <h2>Darurat: bahaya langsung</h2>
+      <p>Jika kamu atau orang di dekatmu dalam bahaya, hubungi sekarang atau datang ke IGD terdekat.</p>
+    </div>
+    <a class="btn big" href="tel:112"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>112</a>
+  </div>
+  <h2 class="rv">Layanan lainnya</h2>
+  <ul class="svc">
+    <li class="rv" data-tilt><div class="badge-ico pop"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M12 7v6M9 10h6M10 21v-4h4v4"/></svg></div><b class="pop">Layanan kesehatan jiwa Kemenkes</b><span>Tekan ekstensi 8 setelah tersambung.</span><a class="num" href="tel:119"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>119</a></li>
+    <li class="rv" style="--d:.1s" data-tilt><div class="badge-ico pop"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg></div><b class="pop">Halo Kemenkes</b><span>Layanan informasi kesehatan.</span><a class="num" href="tel:1500567"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 005 5L15 13l5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg>1500-567</a></li>
+  </ul>
+  <div class="friend rv">
+    <h2>Cara membantu temanmu</h2>
+    <p>Dengarkan tanpa menghakimi, tanyakan kabarnya dengan tulus, dan ajak ia menghubungi konselor atau tenaga profesional. Jika ia menyebut ingin menyakiti diri sendiri, temani dan segera hubungi bantuan di atas.</p>
+  </div>
+</section>
+
+<section id="tentang" class="view">
+  <div class="phead">
+    <div>
+      <h1 class="rv">Tentang Teduh</h1>
+      <p class="lead rv" style="--d:.08s">Teduh dibuat untuk Lomba Web Design GEMATIK VI 2026 dengan tema <i>Empowering Global Innovators for an Intelligent Future</i>.</p>
+    </div>
+    <div class="cube-wrap violet" aria-hidden="true"><div class="cube"><i class="f1"></i><i class="f2"></i><i class="f3"></i><i class="f4"></i><i class="f5"></i><i class="f6"></i></div></div>
+  </div>
+  <h2 class="rv">Tujuan SDGs</h2>
+  <div class="sdgs">
+    <article class="sdg rv" data-tilt><div class="n pop">3</div><h3 class="pop">Kehidupan Sehat dan Sejahtera</h3><p>Tujuan utama Teduh.</p></article>
+    <article class="sdg rv" style="--d:.1s" data-tilt><div class="n pop">4</div><h3 class="pop">Pendidikan Berkualitas</h3><p>Mendukung mahasiswa tetap sehat agar bisa belajar dengan baik.</p></article>
+    <article class="sdg rv" style="--d:.2s" data-tilt><div class="n pop">10</div><h3 class="pop">Berkurangnya Kesenjangan</h3><p>Akses gratis tanpa akun untuk semua.</p></article>
+  </div>
+  <div class="privacy rv">
+    <div class="badge-ico"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg></div>
+    <div>
+      <h2>Privasi</h2>
+      <p>Semua data (hasil cek, mood, catatan) hanya disimpan di browser perangkatmu dan tidak dikirim ke server mana pun.</p>
+      <p><button class="btn danger" id="wipe" type="button"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M9 7V4h6v3M6 7l1 13h10l1-13M10 11v6M14 11v6"/></svg>Hapus semua data saya</button></p>
+    </div>
+  </div>
+  <div class="panel rv">
+    <h2>Sumber &amp; catatan</h2>
+    <p>Kuesioner: PHQ-9 (Kroenke, Spitzer &amp; Williams), bebas digunakan. Teks pertanyaan di sini adalah terjemahan bebas; untuk versi final gunakan terjemahan Indonesia yang tervalidasi dan cantumkan sumbernya.</p>
+    <p><b>Penting:</b> Teduh bukan alat diagnosis. Hasilnya hanya gambaran awal dan tidak menggantikan pemeriksaan tenaga profesional.</p>
+    <h2>Tim pengembang</h2>
+    <p>Ridan Nurroziqin Mardani dan Aidil Aziza<br>Program Studi Informatika, Universitas Teknokrat Indonesia</p>
+  </div>
+</section>
+
+</main>
+
+<a class="sos" href="#bantuan">Butuh bantuan sekarang</a>
+<div id="report" class="report" aria-hidden="true"></div>
+<script src="js/app.js?v=6"></script>
+</body>
+</html>
